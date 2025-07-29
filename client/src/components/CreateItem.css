@@ -1,0 +1,101 @@
+
+.create-item-container {
+  max-width: 700px;
+  margin: 100px auto 40px auto;
+  padding: 40px 30px;
+  background: #0F2027;
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  width: 95%;
+  /* border-radius: 10px solid red; */
+}
+
+.create-item-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #18c0b8;
+  font-size: 28px;
+  border-bottom: 2px solid #00c3ff;
+  padding-bottom: 10px;
+}
+
+.create-item-form input,
+.create-item-form textarea,
+.create-item-form select {
+  width: 100%;
+  padding: 14px 15px;
+  margin-bottom: 20px;
+  border: 2px solid #beb6b6;
+  background-color: rgb(250, 249, 249);
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.create-item-form ::placeholder {
+  color: rgb(27, 27, 27);
+  font-size: larger;
+}
+
+.create-item-form select {
+  color: rgb(36, 34, 34);
+  font-size: larger;
+}
+
+.create-item-form input:focus,
+.create-item-form textarea:focus,
+.create-item-form select:focus {
+  border-color: #ff5100;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 195, 255, 0.3);
+}
+
+.create-item-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.create-item-form button {
+  width: 100%;
+  padding: 14px;
+  background-color: #00c3ff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.create-item-form input{
+  color: #0f0f0e;
+  font-size: larger;
+}
+.create-item-form button:hover {
+  background-color: #009acd;
+}
+
+@media (min-width: 600px) {
+  .create-item-container {
+    max-width: 700px;
+    margin-top: 100px;
+    margin: 100px auto;
+    border-radius: 20px;
+    padding: 40px 30px;
+  }
+
+  .create-item-form h2 {
+    font-size: 26px;
+  }
+
+  .create-item-form input,
+  .create-item-form textarea,
+  .create-item-form select {
+    font-size: 16px;
+  }
+}

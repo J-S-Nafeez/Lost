@@ -12,7 +12,7 @@ RUN npm install
 COPY . .
 
 # Build the app
-RUN npm run build
+RUN npm run dev
 
 # Serve the production build using a lightweight server
 RUN npm install -g serve

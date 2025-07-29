@@ -2,6 +2,9 @@
 
 A comprehensive web application designed for educational institutions to help students report and find lost items efficiently. Built with modern web technologies and deployed with containerization support.
 
+# Live Demo 🌐🔗  
+👉 [https://lost-khaki.vercel.app/](https://lost-khaki.vercel.app/)
+
 ## 🌟 Features
 
 ### Core Functionality
@@ -174,14 +177,14 @@ CMD ["npm", "start"]
 version: '3.8'
 services:
   frontend:
-    build: ./frontend
+    build: ./client
     ports:
       - "3000:80"
     depends_on:
       - backend
   
   backend:
-    build: ./backend
+    build: ./server
     ports:
       - "5000:5000"
     environment:
@@ -203,7 +206,7 @@ volumes:
 ## 🚀 Deployment
 
 ### Live Application
-- **Frontend**: Deployed on Render
+- **Frontend**:🌐✨https://lost-khaki.vercel.app
 - **Backend API**: https://YOUR_URL
 - **Database**: MongoDB Atlas
 
@@ -216,20 +219,6 @@ npm run build
 npm run logs
 ```
 
-## 🧪 Testing
-
-```bash
-# Run frontend tests
-cd frontend
-npm run test
-
-# Run backend tests
-cd backend
-npm run test
-
-# Run integration tests
-npm run test:integration
-```
 
 ## 📊 Performance Features
 
